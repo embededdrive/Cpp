@@ -52,10 +52,10 @@ int main() {
 	pq.push({ start, 0 });
 
 	// dist 배열을 최소비용 저장용으로 사용
-	dist[start] = 0;
-
-	// dist 배열을 비교용으로도 사용하기 위해 초기화
 	int dist[8];
+	
+	// dist 배열을 비교용으로도 사용하기 위해 초기화
+	dist[start] = 0;
 	for (int i = 1; i <= 7; i++) dist[i] = INF;
 
 	// [구현단계]
