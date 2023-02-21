@@ -3,12 +3,6 @@
 
 using namespace std;
 
-struct Student {
-	string name;
-	int age;
-	int grade;
-};
-
 bool cmp(int left, int right) {
 	return left > right;
 }
@@ -18,9 +12,15 @@ bool cmp1(int left, int right) {
 		return true;
 	if (left < right)
 		return false;
-	if (left == right)
-		return false;
+	return false;
 }
+
+struct Student {
+	string name;
+	int age;
+	int grade;
+};
+
 
 bool ssafycmp(Student left, Student right) {
 	// #1 시험 점수 높은 사람
