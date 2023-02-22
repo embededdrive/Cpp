@@ -35,26 +35,3 @@ struct cmp
 		return false;
 	}
 };
-
-int main()
-{
-	string str;
-
-	cin >> str;
-
-	priority_queue<char, vector<char>, less<char>> pq;
-
-	
-	for (int i = 0; i < str.size(); i++)
-	{
-		pq.push(str[i]);
-	}
-
-	while (!pq.empty())
-	{
-		cout << pq.top();
-		pq.pop();
-	}
-
-	return 0;
-}
